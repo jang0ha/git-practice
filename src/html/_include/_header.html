@@ -1,0 +1,92 @@
+<a href="#content" class="visually-hidden-focusable">본문 바로가기</a>
+<header id="header">
+  <div class="header">
+    <div class="inner">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="col-auto">
+          <div class="logo">
+            <a href="/"><span class="visually-hidden">HYOSUNG ADVANCED MATERIALS LOGO</span></a>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex">
+            <ul class="quick">
+              <li><a href="">지속가능경영</a></li>
+              <li><a href="">쇼룸</a></li>
+              <li><a href="">홍보센터</a></li>
+              <li><a href="">KR</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn-allmenu text-primary">전체메뉴 <span class="circle"></span></button>
+        </div>
+      </div>
+      <nav class="gnb">
+        <div class="dep1">
+          <ul>
+            <li>
+              <a href=""><span>Company</span></a>
+            </li>
+            <li>
+              <a href=""><span>Business</span></a>
+            </li>
+            <li>
+              <a href=""><span>Brand</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dep2">
+          <ul class="@@if (context.dep1 === 'Brand') {show}">
+            <li>
+              <a href=""><span>Brand Now</span></a>
+              <ul class="dep3">
+                <li><a href=""><span>브랜드 저널리즘</span></a></li>
+                <li><a href=""><span>브랜드 TV</span></a></li>
+                <li><a href=""><span>소셜미디어</span></a></li>
+                <li><a href=""><span>브랜드 이미지</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><span>ESG Now</span></a>
+              <ul class="dep3">
+                <li><a href=""><span>ESG 경영</span></a></li>
+                <li><a href=""><span>ESG 성과</span></a></li>
+                <li><a href=""><span>ESG Story</span></a></li>
+                <li><a href=""><span>ESG 활동</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><span>Brand Strategy</span></a>
+              <ul class="dep3">
+                <li><a href=""><span>미션/비전</span></a></li>
+                <li><a href=""><span>아이덴티티</span></a></li>
+                <li><a href=""><span>브랜드 체계</span></a></li>
+                <li><a href=""><span>ESG 브랜드</span></a></li>
+                <li><a href=""><span>그룹 브랜드 현황</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><span>Life Style</span></a>
+            </li>
+          </ul>
+          <ul class="@@if (context.dep1 === 'Company') {show}">
+            <li>
+              <a href=""><span></span></a>
+              <ul class="dep3">
+                <li><a href=""><span></span></a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="@@if (context.dep1 === 'Business') {show}">
+            <li>
+              <a href=""><span></span></a>
+              <ul class="dep3">
+                <li><a href=""><span></span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

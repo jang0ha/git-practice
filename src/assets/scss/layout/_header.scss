@@ -1,0 +1,28 @@
+#header{
+  position: fixed;width: 100%;background: #fff;height: 60px;
+  @include media-breakpoint-up(lg){
+    height: 70px;
+  }
+}
+
+.header{
+  .inner{padding: 0 40px;}
+}
+
+.logo{
+  a{display: inline-block;background: url('../images/logo.svg') no-repeat 0 0;background-size: contain;width: 159px;vertical-align: top;}
+}
+
+.btn-allmenu{
+  display: flex;align-items: center;
+  .circle{display: block;width: 20px;height: 20px;border-radius: 50%;background: #161618;}
+}
+
+.gnb{
+  .dep2{
+    > ul{
+      display: none;
+      &.show{display: block;}
+    }
+  }
+}

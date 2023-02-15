@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html',{"title": "효성첨단소재"})
+  <script>
+    document.querySelector('html').classList.add('is-main');
+  </script>
+</head>
+
+<!-- 메인에서만 .main-wrapper붙음 -->
+
+<body class="main-wrapper">
+  <div id="wrap">
+    <!-- @@include('@@webRoot/html/_include/_header.html', {"main": true}) -->
+    <div id="container">
+      <!-- 섹션 1 : 메인 비주얼  -->
+      <section id="main-visual">
+        <!-- 왼쪽 -->
+        <div class="left-side visual-wrapper">
+          <div class="visual-container">
+            <div class="dummy-circle"></div>
+
+            <div class="video-container">
+              <figure>
+                <video preload="metadata" buffered loop muted loop autoplay="autoplay">
+                  <source src="../../assets/images/main-video-safety.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <small>SAFETY</small>
+                  당신의 안전을<br>
+                  첨단소재로
+                </figcaption>
+              </figure>
+            </div>
+
+
+            <div class="main-svg-container d-none">
+              <svg fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="main-visual-circle visual-circle-left">
+                <defs>
+                  <mask id="mask-main-visual-left">
+                    <g>
+                      <circle cx="381.886" cy="382.065" r="381.5" fill="white" />
+                      <!-- <rect x="0" y="0" width="100%" height="100%" fill="white" /> -->
+                    </g>
+                  </mask>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" mask="url(#mask-main-visual-left)" fill="black" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- //왼쪽 -->
+
+        <!-- 오른쪽 -->
+        <div class="right-side visual-wrapper" style="display: none;">
+          <div class="visual-container">
+            <div class="dummy-circle"></div>
+          </div>
+        </div>
+        <!-- //오른쪽 -->
+      </section>
+      <!-- // 섹션 1 : 메인 비주얼  -->
+
+    </div>
+    @@include('@@webRoot/html/_include/_modal.html')
+    @@include('@@webRoot/html/_include/_footer.html')
+  </div>
+
+  <!-- 메인에서만 붙는 js  -->
+  <script src="'@@webRoot/src/assets/js/main.js'"></script>
+</body>
+
+</html>
